@@ -68,16 +68,17 @@ header p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 500px;
-    background-image: url("../assets/hero.png");
+    align-items: center;
+    height: 250px;
+    /* background-image: url("../assets/hero.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
 }
 
-/* 
-.intro img{
-padding-top: 200px;
-} */
+
+.intro img {
+    padding-top: 250px;
+}
 
 #filters {
     display: flex;
