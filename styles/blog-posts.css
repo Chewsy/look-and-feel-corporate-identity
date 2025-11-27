@@ -1,16 +1,16 @@
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 article {
-    background: white;
+    background-color: var(--background-dark-shadow);
     width: 800px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
-    margin: 24px 0 80px;
-    box-shadow: 0 2.5px 0 #3d5780;
-    border: 1.5px solid #3d5780;
+    box-shadow: 0 2.5px 0 var(--dark-accent);
+    margin: 24px 0 50px;
+    border: 1.5px solid var(--dark-accent);
 }
 
 article img {
@@ -30,20 +30,20 @@ article img {
 }
 
 .back-btn {
-    background: rgba(255,255,255,0.95);
-    border: 1px solid #3d5780;
-    color: #3d5780;
+    background: var(--accent);
+    border: 1px solid var(--dark-accent);
+    color: var(--background-dark);
     padding: 8px 10px;
     border-radius: 10px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 2px 0 #3d5780;
+    box-shadow: 0 2px 0 var(--dark-accent);
 }
 
 .back-btn:focus {
-    outline: 1px solid #3d5780;
+    outline: 1px solid var(--background-dark);
 }
 
 .fa-space {
@@ -54,20 +54,24 @@ article img {
 .back-btn i.fa-solid {
     font-size: 18px;
     line-height: 1;
-    color: #3d5780;
+    color: var(--background-dark);
 }
 
 article section {
     padding: 35px 30px;
 }
 
+body > main > article > section > hr{
+    width: 100%;
+}
+
 article h1 {
     margin: 0 0 12px 0;
-    color: #3d5780;
+    color: var(--accent);
 }
 
 article .description {
-    color: #3d5780;
+    color: var(--text);
     margin: 0 0 18px 0;
 }
 
@@ -77,11 +81,10 @@ article .content p {
 
 article .content h2 {
     margin-top: 20px;
-    color: #3d5780;
+    color: var(--accent);
 }
 
 .tags-share {
-    border-top: 1px solid #eef2f7;
     padding: 20px 28px;
     display: flex;
     justify-content: space-between;
@@ -97,35 +100,40 @@ article .content h2 {
 }
 
 .tags-share .tags span {
-    background: #3d5780;
-    color: white;
+    background: var(--background-dark);
+    color: var(--text);
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 0 #d4dadf;
-    border: 1px solid #d4dadf;
+    box-shadow: 0 2.5px 0 var(--dark-accent);
+    border: 1px solid var(--dark-accent);
 }
 
 .share a {
-    color: #3d5780;
+    color: var(--text);
     text-decoration: none;
     font-weight: 600
 }
 
 .share-btn {
-    background: #d4dadf;
-    color: #3d5780;
-    border: 1px solid #3d5780;
+    background: var(--accent);
+    color: var(--background-dark);
+    border: 1px solid var(--dark-accent);
     padding: 8px 12px;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    box-shadow: 0 2.5px 0 #3d5780;
+    box-shadow: 0 2.5px 0 var(--dark-accent);
 }
 
 .share-btn:hover {
-    background-color: #3d5780;
-    box-shadow: 0 -2px 0 hsla (0, 0%, 100%, .15);
-    color: white;
+    background: var(--background-light);
+    color: var(--background-dark);
+    border: 1px solid var(--dark-accent);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2.5px 0 var(--dark-accent);
 }
 
 @media (max-width:900px) {
@@ -146,4 +154,207 @@ article .content h2 {
     article img {
         height: 150px
     }
+}
+
+.reacties-container {
+    width: 800px;
+    background-color: var(--background-dark-shadow);
+    height: 300px;
+    margin-top: 50px;
+}
+
+input[type="text"],
+textarea {
+    padding: var(--input-padding-y) var(--input-padding-x);
+    background-color: var(--background-inset);
+    color: var(--text);
+    border: none;
+    border-radius: var(--border-radius-default);
+    font-family: var(--font-family);
+    font-size: var(--label);
+    box-shadow: var(--shadow-inset);
+    width: 60%;
+}
+
+#naam {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--background-light);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: var(--shadow-inset), var(--focus-border);
+}
+
+/* Foutmeldingen*/
+
+label.error-message {
+    color: var(--error-color);
+    font-size: var(--label);
+    margin-top: 4px;
+    display: block;
+}
+
+.reacties-container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    min-height: 450px;
+    margin-bottom: 25px;
+    padding: 20px;
+    align-items: flex-start;
+    filter: drop-shadow(5px 5px 10px #0000002c);
+    box-shadow: 0 2.5px 0 var(--dark-accent);
+    border: 1.5px solid var(--dark-accent);
+    border-radius: 20px;
+}
+
+.plaats-reactie {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 800px;
+    background-color: var(--background-dark-shadow);
+    height: auto;
+    padding: 20px;
+    margin-bottom: 25px;
+
+    filter: drop-shadow(5px 5px 10px #0000002c);
+    box-shadow: 0 2.5px 0 var(--dark-accent);
+    border: 1.5px solid var(--dark-accent);
+    border-radius: 20px;
+
+}
+
+button,
+input[type="submit"] {
+    margin-top: 20px;
+    padding: var(--button-padding-y) var(--button-padding-x);
+    background-color: var(--accent);
+    color: var(--background-dark);
+    border: none;
+    border-radius: var(--border-radius-default);
+    font-weight: 600;
+    font-size: var(--label);
+    font-family: var(--font-family);
+    cursor: pointer;
+    box-shadow: var(--shadow-button), var(--shadow-small);
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: var(--background-light);
+    box-shadow: var(--shadow-small);
+}
+
+button.secondary {
+    color: var(--text);
+    background-color: var(--background-inset);
+    border: 2px solid var(--background-inset);
+    box-shadow: none;
+}
+
+button.secondary:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: var(--background-light);
+    text-decoration: underline;
+}
+
+.reactie {
+    width: 700px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "likes  auteur"
+        "likes timestamp"
+        "likes reactie-text";
+    gap: 0 20px;
+    background-color: var(--background-dark);
+    color: var(--reactie-text);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2.5px 0 var(--dark-accent);
+    border: 1.5px solid var(--dark-accent);
+    border-radius: 12px;
+}
+
+.reactie .likes {
+    grid-area: likes;
+}
+
+.reactie .auteur {
+    grid-area:  auteur;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 14px;
+}
+
+.reactie .timestamp {
+    grid-area: timestamp;
+    font-size: 12px;
+    color: var(--dark-accent);
+    margin-bottom: 8px;
+}
+
+.reactie .reactie-reactie-text {
+    grid-area: reactie-text;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.likes {
+    display: flex;
+    width: 60px;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--background-dark-shadow);
+    color: var(--accent);
+    border: 1.5px solid var(--dark-accent);
+    border-radius: 10px;
+    box-shadow: 0 2.5px 0 var(--dark-accent);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &span {
+        color: var(--accent);
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+/* .likes:hover {
+    background-color: var(--background-dark);
+    transform: translateY(-2px);
+} */
+
+.likes i {
+    font-size: 24px;
+    color: var(--accent);
+
+    &:hover{
+        color: var(--background-light);
+    }
+}
+
+.reactie hr{
+    width: 80%;
+    height: 0.5px;
+}
+
+hr{
+    height: 0.5px;
+    width: 800px;
 }

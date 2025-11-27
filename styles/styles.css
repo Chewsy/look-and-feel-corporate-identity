@@ -5,7 +5,7 @@
 }
 
 html {
-    border-top: 10px solid var(--dark-light);
+    border-top: 10px solid var(--accent);
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     inset: 0;
     background: url("../assets/bg-svg-light.svg");
     opacity: 0.3;
@@ -45,7 +45,7 @@ header {
     align-items: center;
     padding: 20px;
     border-bottom: 0.5px solid var(--dark-light);
-    color: var(--text);
+    color: var(--accent);
 
     @media (min-width: 768px) {
         flex-direction: row;
@@ -64,16 +64,16 @@ header p {
     text-wrap: balance;
 }
 
-.intro{
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 500px;
-    /* background-color: #f0f0f0; */
     background-image: url("../assets/hero.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 /* 
 .intro img{
 padding-top: 200px;
@@ -110,11 +110,16 @@ select:focus {
     border-radius: 20px;
 }
 
+a {
+    color: var(--background-light);
+    text-decoration: underline;
+}
+
 label {
     font-weight: bold;
     margin-bottom: 5px;
     display: inline-block;
-    color: var(--dark-accent);
+    color: var(--accent);
 }
 
 .fa-square-caret-down {
@@ -127,18 +132,18 @@ label {
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
-    color: var(--dark-light);
+    color: var(--accent);
     font-size: 1.1em;
 }
 
-#hr-select {
+#select {
     width: 100%;
     max-width: 400px;
     padding: 10px 12px;
     font-size: 16px;
     border-radius: 6px;
     background-color: var(--background-dark-shadow);
-    color: var(--dark-accent);
+    color: var(--accent);
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
@@ -147,7 +152,7 @@ label {
     border: 1.5px solid var(--dark-accent);
 }
 
-#hr-select:focus {
+#select:focus {
     border-color: var(--dark-light);
     box-shadow: 0 0 2px #3d578070;
     outline: none;
@@ -155,14 +160,14 @@ label {
     border: 1.5px solid var(--dark-light);
 }
 
-#hr-select optgroup {
+#select optgroup {
     font-weight: bold;
     color: #333;
     box-shadow: 0 2.5px 0 var(--dark-light);
     border: 1.5px solid var(--dark-light);
 }
 
-#hr-select option:hover {
+#select option:hover {
     background-color: #f0f0f0;
     box-shadow: 0 2.5px 0 var(--dark-light);
     border: 1.5px solid var(--dark-light);
@@ -170,7 +175,7 @@ label {
 
 h1,
 h2 {
-    color: var(--text);
+    color: var(--accent);
 }
 
 #articles {
@@ -207,7 +212,6 @@ article img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    /* border-bottom: 5px solid var(--background-light); */
 }
 
 .article-content {
@@ -217,8 +221,8 @@ article img {
     padding: 20px;
 }
 
-.article-content h2{
-    color: var(--text);
+.article-content h2 {
+    color: var(--accent);
 }
 
 article p {
@@ -238,7 +242,7 @@ article p {
 }
 
 .tags li {
-    background-color: var(--background-dark-shadow);
+    background-color: var(--background-dark);
     color: var(--text);
     padding: 5px 10px;
     border-radius: 5px;
@@ -326,17 +330,6 @@ footer {
     gap: 15px;
 }
 
-.footer-links a {
-    color: #fff;
-    text-decoration: underline;
-    border-bottom: 1px solid transparent;
-    transition: 0.2s ease;
-}
-
-.footer-links a:hover {
-    border-bottom: 1px solid #fff;
-}
-
 .partners-section {
     padding: 40px 0;
     width: 100%;
@@ -348,7 +341,7 @@ footer {
 }
 
 .partners-section h3 {
-    color: #fff;
+    color: var(--text);
     font-weight: 600;
     margin: 0;
 }
