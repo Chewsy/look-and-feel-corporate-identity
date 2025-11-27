@@ -8,6 +8,9 @@ De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-f
 <img width="321" height="347" alt="image" src="https://github.com/user-attachments/assets/bb81cbf1-fe90-49b5-ae42-1b02b8740dd8" />
 
 
+<img width="1800" height="760" alt="3-devices-black (1)" src="https://github.com/user-attachments/assets/bb17e916-a16b-4a3e-86c3-985a05e0092f" />
+
+
 # Titel
 
 ## Beschrijving
