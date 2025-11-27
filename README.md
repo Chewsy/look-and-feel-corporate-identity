@@ -7,16 +7,15 @@ De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-f
 [Bekijk de website](https://edu.nl/x4643)  
 <img width="321" height="347" alt="image" src="https://github.com/user-attachments/assets/bb81cbf1-fe90-49b5-ae42-1b02b8740dd8" />
 
-
-<img width="1800" height="760" alt="3-devices-black (1)" src="https://github.com/user-attachments/assets/bb17e916-a16b-4a3e-86c3-985a05e0092f" />
-
-
 # Titel
 
 ## Beschrijving
 Design for recognition is een interdisciplinaire onderzoeksgroep aan de Hogeschool van Amsterdam. Ze onderzoeken hoe design en technologie kunnen bijdragen aan het maatschappelijk leven: de talrijke en gevarieerde interacties waarmee mensen in een samenleving samenkomen om te streven naar collectief welzijn.  
 
-De website bestaat uit een overzichtspagina met aangeleverde artiekelen als previews die linken naar de aangeklikte blog post.
+De website bestaat uit een overzichtspagina met aangeleverde artiekelen als previews die linken naar de aangeklikte blog post.  
+  
+<img width="1800" height="760" alt="3-devices-black (1)" src="https://github.com/user-attachments/assets/bb17e916-a16b-4a3e-86c3-985a05e0092f" />
+
 
 ## Kenmerken
 De website is ontwerpt met "mobile first" in gedachten waarvoor flexbox is gebruikt zodat de gebruiker met gemak de responsive website kan bekijken. Op grotere formaten schaalt het content netjes mee door middel van een grid-systeem.  
