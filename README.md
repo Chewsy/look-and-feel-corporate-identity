@@ -1,20 +1,22 @@
 # Corporate Identity
 
-Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
+<!-- Ontwerp en maak voor een opdrachtgever een website op basis van een bestaande huisstijl.
 
-De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-feel-corporate-identity/blob/main/docs/INSTRUCTIONS.md)
+De instructie vind je in: [INSTRUCTIONS](https://github.com/fdnd-task/look-and-feel-corporate-identity/blob/main/docs/INSTRUCTIONS.md) -->
 
+[Bekijk de website](https://edu.nl/x4643)
 
 # Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Design for recognition is een interdisciplinaire onderzoeksgroep aan de Hogeschool van Amsterdam. Ze onderzoeken hoe design en technologie kunnen bijdragen aan het maatschappelijk leven: de talrijke en gevarieerde interacties waarmee mensen in een samenleving samenkomen om te streven naar collectief welzijn.  
+
+De website bestaat uit een overzichtspagina met aangeleverde artiekelen als previews die linken naar de aangeklikte blog post.
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De website is ontwerpt met "mobile first" in gedachten waarvoor flexbox is gebruikt zodat de gebruiker met gemak de responsive website kan bekijken. Op grotere formaten schaalt het content netjes mee door middel van een grid-systeem.  
+
+Ook is de huisstijl van de opdrachtgever toegepast op de prototype.
 
 ## Bronnen
 
